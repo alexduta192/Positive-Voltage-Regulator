@@ -1,0 +1,187 @@
+
+**** 11/08/24 20:18:09 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\richa\desktop\p1 rrr\8\8-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "../../../p1/spice_models_tht_transistors.txt" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "../../../MovedFiles/mjd32cg.lib" 
+.LIB "../../../MovedFiles/bzx84c6v2.lib" 
+.LIB "../../../MovedFiles/bzx84c5v1.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "../../../MovedFiles/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\richa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 8
+R_R1         N04257 N03189  2.2k TC=0,0 
+R_R2         0 N00294  470 TC=0,0 
+R_R6         N00751 N00646  22k TC=0,0 
+R_R7         N007061 N00747  3.3K TC=0,0 
+X_R8         N00747 N03922 N00751 POT PARAMS: SET=0 VALUE=2k
+R_R3         N04406 N00646  33 TC=0,0 
+R_R5         0 N04598  33k TC=0,0 
+R_R4         N04598 N04406  4.7k TC=0,0 
+R_RL         0 N00646  1000 TC=0,0 
+R_R9         N23501 N03189  470 TC=0,0 
+V_V1         N03189 0 18
+R_R10         N23505 N03189  470 TC=0,0 
+X_R11         0 N32050 N04257 POT PARAMS: SET=0.5 VALUE=10k
+X_D1         0 N04257 Zener PARAMS: VZT=5.6 TCBV=1.7 
+Q_Q4         N00220 N03922 N00294 QBC337-40 
+Q_Q7         N00646 N34240 0 QBC337-40 
+X_D2         N34240 N00646 Zener PARAMS: VZT=24 TCBV=1.7 
+Q_Q5         N03189 N00220 N04406 QBC337-40 
+R_R13         0 N007061  3.3K TC=0,0 
+Q_Q6         N00220 N04598 N00646 QBC337-40 
+Q_Q1         N00198 N00198 N23501 BC327_40 
+R_R12         0 N34240  100 TC=0,0 
+Q_Q2         N00220 N00198 N23505 BC327_40 
+Q_Q3         N00198 N32050 N00294 QBC337-40 
+.PARAM  rl=1k
+
+**** RESUMING bias.cir ****
+.END
+
+**** 11/08/24 20:18:09 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\richa\desktop\p1 rrr\8\8-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC337-40       BC327_40        
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   78.090000E-15   10.002900E-15 
+          BF  436.8           482.999        
+          NF     .9916           .994875     
+         VAF  103.6           100            
+         IKF     .8             1.02836      
+         ISE    2.069000E-15   18.544110E-21 
+          NE    1.4             1.14573      
+          BR   44.14             .100389     
+          NR     .991           1            
+         VAR   14                            
+         IKR     .09            1            
+         ISC   66.600000E-15    1.148950E-12 
+          NC    1.2                          
+         ISS    0               0            
+          RB   70                            
+         RBM    8                            
+         IRB  200.000000E-06                 
+          RE     .12             .360928     
+          RC     .24             .743745     
+         CJE   35.790000E-12    2.000000E-12 
+         VJE     .6657           .75         
+         MJE     .3596           .5          
+         CJC   13.060000E-12   50.385100E-12 
+         VJC     .3647           .7          
+         MJC     .3658           .558066     
+        XCJC     .455           1            
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .333                        
+          FC     .843                        
+          TF  500.000000E-12  500.996000E-12 
+         XTF    2.5              .499989     
+         VTF    2              10            
+         ITF     .5              .010072     
+         PTF   88                            
+          TR   25.000000E-09   10.000000E-09 
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/08/24 20:18:09 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\richa\desktop\p1 rrr\8\8-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00198)   16.2430 (N00220)   10.9970 (N00294)    2.1602 (N00646)    9.9967     
+
+(N00747)    2.1319 (N00751)    2.7780 (N03189)   18.0000 (N03922)    2.7780     
+
+(N04257)    5.5788 (N04406)   10.3370 (N04598)    9.0487 (N23501)   16.9170     
+
+(N23505)   16.9160 (N32050)    2.7771 (N34240) 59.50E-06 (N007061)    1.0660    
+
+(X_D1.XinstMyZenerModel.1)     .4756  (X_D1.XinstMyZenerModel.3)    5.1032      
+
+(X_D1.XinstMyZenerModel.9) 51.98E-06  (X_D2.XinstMyZenerModel.1)  -13.5070      
+
+(X_D2.XinstMyZenerModel.3)   23.5030  (X_D2.XinstMyZenerModel.9) 59.50E-06  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.083E-02
+
+    TOTAL POWER DISSIPATION   3.75E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/08/24 20:18:09 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\users\richa\desktop\p1 rrr\8\8-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.20
+  Total job time (using Solver 1)   =         .03
+

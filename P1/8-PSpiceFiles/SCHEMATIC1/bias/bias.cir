@@ -1,0 +1,28 @@
+** Profile: "SCHEMATIC1-bias"  [ c:\users\richa\desktop\p1 rrr\8\8-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "../../../p1/spice_models_tht_transistors.txt" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "../../../MovedFiles/mjd32cg.lib" 
+.LIB "../../../MovedFiles/bzx84c6v2.lib" 
+.LIB "../../../MovedFiles/bzx84c5v1.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "../../../MovedFiles/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\richa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

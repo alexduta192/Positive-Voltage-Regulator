@@ -1,0 +1,5 @@
+ lib="c:\users\richa\desktop\p1 rrr\8\p1\lib_modelepspice_anexa_1\modele_a1_lib\bc817-25.lib", offset=668, size=682
+ lib="c:\users\richa\desktop\p1 rrr\8\p1\spice_models_tht_transistors.txt", offset=3889, size=455
+ lib=c:\cadence\spb_22.1\tools\PSpice\Library\breakout.lib, offset=7617, size=133
+ lib=c:\cadence\spb_22.1\tools\PSpice\Library\PSpiceModelApps.lib, offset=341, size=390
+ lib=c:\cadence\spb_22.1\tools\PSpice\Library\templates.lib, offset=13466, size=8781

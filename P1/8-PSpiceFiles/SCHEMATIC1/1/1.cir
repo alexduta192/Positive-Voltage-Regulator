@@ -1,0 +1,28 @@
+** Profile: "SCHEMATIC1-1"  [ C:\Users\Alex\Desktop\an 3 orcad\8\8-pspicefiles\schematic1\1.sim ] 
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "../../../p1/spice_models_tht_transistors.txt" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "../../../MovedFiles/mjd32cg.lib" 
+.LIB "../../../MovedFiles/bzx84c6v2.lib" 
+.LIB "../../../MovedFiles/bzx84c5v1.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "../../../MovedFiles/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Alex\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

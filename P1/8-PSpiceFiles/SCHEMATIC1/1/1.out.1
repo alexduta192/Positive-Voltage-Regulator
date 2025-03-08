@@ -1,0 +1,75 @@
+
+**** 01/13/25 12:08:50 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1"  [ C:\Users\Alex\Desktop\an 3 orcad\8\8-pspicefiles\schematic1\1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "../../../p1/spice_models_tht_transistors.txt" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "../../../MovedFiles/mjd32cg.lib" 
+.LIB "../../../MovedFiles/bzx84c6v2.lib" 
+.LIB "../../../MovedFiles/bzx84c5v1.lib" 
+.LIB "../../../p1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "../../../MovedFiles/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Alex\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM RL 10 1000 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 8
+R_R1         N04257 N03189  2.2k TC=0,0 
+R_R2         0 N00294  470 TC=0,0 
+R_R6         N00751 N00646  22k TC=0,0 
+R_R7         N007061 N00747  3.3K TC=0,0 
+X_R8         N00747 0 N00751 POT PARAMS: SET=0 VALUE=2k
+R_R3         N04406 N00646  33 TC=0,0 
+R_R5         0 N04598  33k TC=0,0 
+R_R4         N04598 N04406  4.7k TC=0,0 
+R_RL         0 N00646  0 TC=0,0 
+-----------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+R_R9         N23501 N03189  470 TC=0,0 
+V_V1         N03189 0 15
+R_R10         N23505 N03189  470 TC=0,0 
+X_R11         0 N32050 N04257 POT PARAMS: SET=0.5 VALUE=10k
+X_D1         0 N04257 Zener PARAMS: VZT=5.6 TCBV=1.7 
+Q_Q4         N00220 0 N00294 QBC337-40 
+Q_Q7         N00646 N34240 0 QBC337-40 
+X_D2         N34240 N42766 Zener PARAMS: VZT=10 TCBV=1.7 
+R_R13         0 N007061  3.3K TC=0,0 
+Q_Q6         N00220 N04598 N00646 QBC337-40 
+Q_Q1         N00198 N00198 N23501 BC327_40 
+R_R12         0 N34240  100 TC=0,0 
+Q_Q2         N00220 N00198 N23505 BC327_40 
+Q_Q3         N00198 N32050 N00294 QBC337-40 
+X_D3         N42766 N00646 Zener PARAMS: VZT=5.1 TCBV=1.7 
+Q_Q5         N03189 N00220 N04406 BD241
+.PARAM  rl=1k
+
+**** RESUMING 1.cir ****
+.END
+
